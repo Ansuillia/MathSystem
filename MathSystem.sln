@@ -5,13 +5,21 @@ VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Console", "DivisorConsole\MathSystem.Console.csproj", "{EFC77A85-7C8E-4DC5-8CF0-AFDD3B7410B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Operations", "MathSystem.DividerDomain\MathSystem.Operations.csproj", "{FDF31220-2854-471F-88BD-86B1DC417689}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Core", "MathSystem.DividerDomain\MathSystem.Core.csproj", "{FDF31220-2854-471F-88BD-86B1DC417689}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.UnitTests", "MathSystem.Divisor.UnitTests\MathSystem.UnitTests.csproj", "{21B9A345-5917-40A8-BB83-CD6282450CC2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Worker", "MathSystem.Worker\MathSystem.Worker.csproj", "{472DC902-D1A6-45A8-A7C1-8073E28682F6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Producer", "MathSystem.Producer\MathSystem.Producer.csproj", "{32DD545F-5E9E-4B92-AE36-CB4E60690E2C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{F1C771F6-B799-4BEE-88CB-51CEAA52EDD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{D840D176-3D03-4E63-A4FB-1768321ED291}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{CA0C31F6-0AB7-4693-86D5-0DD2F97DFD41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E16E163F-6DD4-4F5E-AB04-F6BC8C3FCD66}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +50,13 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EFC77A85-7C8E-4DC5-8CF0-AFDD3B7410B5} = {D840D176-3D03-4E63-A4FB-1768321ED291}
+		{FDF31220-2854-471F-88BD-86B1DC417689} = {F1C771F6-B799-4BEE-88CB-51CEAA52EDD2}
+		{21B9A345-5917-40A8-BB83-CD6282450CC2} = {E16E163F-6DD4-4F5E-AB04-F6BC8C3FCD66}
+		{472DC902-D1A6-45A8-A7C1-8073E28682F6} = {CA0C31F6-0AB7-4693-86D5-0DD2F97DFD41}
+		{32DD545F-5E9E-4B92-AE36-CB4E60690E2C} = {CA0C31F6-0AB7-4693-86D5-0DD2F97DFD41}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DDE86B9E-347B-4FC3-BAE9-E12DD2327101}

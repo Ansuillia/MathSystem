@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MathSystem.DividerDomain\MathSystem.Operations.csproj" />
+    <ProjectReference Include="..\MathSystem.DividerDomain\MathSystem.Core.csproj" />
   </ItemGroup>
 
 </Project>
