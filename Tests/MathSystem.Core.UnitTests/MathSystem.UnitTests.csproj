@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MathSystem.DividerDomain\MathSystem.Core.csproj" />
+    <ProjectReference Include="..\..\Core\MathSystem.Core\MathSystem.Core.csproj" />
   </ItemGroup>
 
 </Project>

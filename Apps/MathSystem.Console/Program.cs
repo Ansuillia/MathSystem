@@ -1,6 +1,5 @@
 ﻿using MathSystem.Core.Implements;
 using MathSystem.Operations.Helpers.Implements;
-using System.Collections.Concurrent;
 using System.Diagnostics;
 
 Console.WriteLine("Digite um número");
