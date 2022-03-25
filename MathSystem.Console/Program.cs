@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 var sw = new Stopwatch();
 
-Console.WriteLine("Bem vindo ao Systemmath Console");
+Console.WriteLine("Bem vindo ao MathSystem Console");
 Console.WriteLine("Digite um número:");
 var input = Console.ReadLine();
 
@@ -28,17 +28,18 @@ sw.Start();
 var result = await HttpConsoleClient.MakeDivision(number);
 sw.Stop();
 
-Console.WriteLine($"Tempo total de processamento: {sw.ElapsedMilliseconds} ms");
 
 if (result is null)
   Console.WriteLine("Houve um problema com o processamento, por favor tente novamente.");
 
-
+Console.WriteLine("Processamento concuído.");
 Console.WriteLine($"Numero digitado: {result.Number}");
 Console.WriteLine($"Divisores: {string.Join(",", result.Divisors)}");
 Console.WriteLine($"Divisores primos: {string.Join(",", result.Primes)}");
 
-Console.WriteLine("Obrigado por usar o SystemMath :)");
+Console.WriteLine($"Tempo total de processamento: {sw.ElapsedMilliseconds} ms");
+
+Console.WriteLine("Obrigado por usar o MathSystem :)");
 
 Console.ReadKey();
 
