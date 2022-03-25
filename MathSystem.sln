@@ -1,64 +1,45 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.1.32210.238
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{74565646-6E4F-428D-B9D2-4EAB1A553877}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{02AC4826-B9F9-4D63-BB9A-34B5B15EF975}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSystem.Core", "Core\MathSystem.Core\MathSystem.Core.csproj", "{60780126-B77E-41C6-8CEE-804223A543B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Core", "Core\MathSystem.Core\MathSystem.Core.csproj", "{B2EF14D6-7504-4E1F-91E3-B80BEF071BC4}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{7183E827-C15B-4EC8-94DE-E9DD5230F919}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{0E0E8538-2E95-4E7B-BCF8-BD864132BAC3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSystem.Producer", "Services\MathSystem.Producer\MathSystem.Producer.csproj", "{D86E97EA-A488-47ED-BF7E-C4BDD6DAC8C4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Worker", "Services\MathSystem.Worker\MathSystem.Worker.csproj", "{7AE856F9-0D45-4A07-9CC9-B3BF64DC5AEA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSystem.Consumer", "Services\MathSystem.Consumer\MathSystem.Consumer.csproj", "{4CA568F8-3C28-417B-935E-B68A5D0AD3E1}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C0643636-79F8-4B70-BD45-AF383C1B78C3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Apps", "Apps", "{A1498E09-7E81-44B4-9FC7-80DC392A4DCB}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Console", "Apps\MathSystem.Console\MathSystem.Console.csproj", "{EA097BE7-AE07-4644-95A9-EC00AB9C08C6}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{729CC77B-5E2F-4DC3-8EC2-7BFE5A31F85F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.UnitTests", "Tests\MathSystem.Core.UnitTests\MathSystem.UnitTests.csproj", "{A33F29CC-6F56-4297-8484-E1AF752A2414}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.UnitTests", "Tests\MathSystem.Core.UnitTests\MathSystem.UnitTests.csproj", "{303C6E3C-9AA7-4883-9D4D-ED785E9D4C35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{60780126-B77E-41C6-8CEE-804223A543B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{60780126-B77E-41C6-8CEE-804223A543B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{60780126-B77E-41C6-8CEE-804223A543B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{60780126-B77E-41C6-8CEE-804223A543B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D86E97EA-A488-47ED-BF7E-C4BDD6DAC8C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D86E97EA-A488-47ED-BF7E-C4BDD6DAC8C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D86E97EA-A488-47ED-BF7E-C4BDD6DAC8C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D86E97EA-A488-47ED-BF7E-C4BDD6DAC8C4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4CA568F8-3C28-417B-935E-B68A5D0AD3E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CA568F8-3C28-417B-935E-B68A5D0AD3E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4CA568F8-3C28-417B-935E-B68A5D0AD3E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4CA568F8-3C28-417B-935E-B68A5D0AD3E1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA097BE7-AE07-4644-95A9-EC00AB9C08C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA097BE7-AE07-4644-95A9-EC00AB9C08C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA097BE7-AE07-4644-95A9-EC00AB9C08C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA097BE7-AE07-4644-95A9-EC00AB9C08C6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A33F29CC-6F56-4297-8484-E1AF752A2414}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A33F29CC-6F56-4297-8484-E1AF752A2414}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A33F29CC-6F56-4297-8484-E1AF752A2414}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A33F29CC-6F56-4297-8484-E1AF752A2414}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{60780126-B77E-41C6-8CEE-804223A543B5} = {74565646-6E4F-428D-B9D2-4EAB1A553877}
-		{D86E97EA-A488-47ED-BF7E-C4BDD6DAC8C4} = {7183E827-C15B-4EC8-94DE-E9DD5230F919}
-		{4CA568F8-3C28-417B-935E-B68A5D0AD3E1} = {7183E827-C15B-4EC8-94DE-E9DD5230F919}
-		{EA097BE7-AE07-4644-95A9-EC00AB9C08C6} = {A1498E09-7E81-44B4-9FC7-80DC392A4DCB}
-		{A33F29CC-6F56-4297-8484-E1AF752A2414} = {729CC77B-5E2F-4DC3-8EC2-7BFE5A31F85F}
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2EF14D6-7504-4E1F-91E3-B80BEF071BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2EF14D6-7504-4E1F-91E3-B80BEF071BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2EF14D6-7504-4E1F-91E3-B80BEF071BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2EF14D6-7504-4E1F-91E3-B80BEF071BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AE856F9-0D45-4A07-9CC9-B3BF64DC5AEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AE856F9-0D45-4A07-9CC9-B3BF64DC5AEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AE856F9-0D45-4A07-9CC9-B3BF64DC5AEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AE856F9-0D45-4A07-9CC9-B3BF64DC5AEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{303C6E3C-9AA7-4883-9D4D-ED785E9D4C35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{303C6E3C-9AA7-4883-9D4D-ED785E9D4C35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{303C6E3C-9AA7-4883-9D4D-ED785E9D4C35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{303C6E3C-9AA7-4883-9D4D-ED785E9D4C35}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BF108610-6B54-4265-BBC0-8DA782D5B449}
+	GlobalSection(NestedProjects) = preSolution
+		{B2EF14D6-7504-4E1F-91E3-B80BEF071BC4} = {02AC4826-B9F9-4D63-BB9A-34B5B15EF975}
+		{7AE856F9-0D45-4A07-9CC9-B3BF64DC5AEA} = {0E0E8538-2E95-4E7B-BCF8-BD864132BAC3}
+		{303C6E3C-9AA7-4883-9D4D-ED785E9D4C35} = {C0643636-79F8-4B70-BD45-AF383C1B78C3}
 	EndGlobalSection
 EndGlobal

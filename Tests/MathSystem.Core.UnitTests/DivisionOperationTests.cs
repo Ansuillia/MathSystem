@@ -1,5 +1,5 @@
 using Xunit;
-using MathSystem.Core.Implements;
+using MathSystem.Operations.Implements;
 using FluentAssertions;
 using Moq;
 

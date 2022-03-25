@@ -1,6 +1,6 @@
 ﻿using MathSystem.Validations.Interfaces;
 
-namespace MathSystem.Core.Interfaces
+namespace MathSystem.Operations.Interfaces
 {
   /// <summary>
   /// Interface that represent a division operation

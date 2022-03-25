@@ -1,6 +1,6 @@
-﻿using MathSystem.Core.Interfaces;
+﻿using MathSystem.Operations.Interfaces;
 
-namespace MathSystem.Core.Implements
+namespace MathSystem.Operations.Implements
 {
   public class DivisionOperation : IDivisionOperation
   {
