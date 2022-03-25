@@ -28,6 +28,7 @@ namespace MathSystem.UnitTests.Services.Worker
 
       var result = divisionController.MakeDivision(10) as OkObjectResult;
 
+      Assert.NotNull(result);
       Assert.True(result.StatusCode == 200);
     }
   }

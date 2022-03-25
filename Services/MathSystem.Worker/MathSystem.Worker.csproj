@@ -11,13 +11,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.15.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\MathSystem.Business\MathSystem.Business.csproj" />
     <ProjectReference Include="..\..\Core\MathSystem.Domain\MathSystem.Domain.csproj" />
     <ProjectReference Include="..\..\Infra\MathSystem.Repository\MathSystem.Repository.csproj" />
-    <ProjectReference Include="..\..\MathSystem.Repository\MathSystem.Repository.csproj" />
   </ItemGroup>
 </Project>

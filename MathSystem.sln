@@ -25,7 +25,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSystem.Domain", "Core\M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathSystem.Repository", "Infra\MathSystem.Repository\MathSystem.Repository.csproj", "{9A23C0CB-A036-4852-BB55-464CF19D35C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Console", "MathSystem.Console\MathSystem.Console.csproj", "{58B01DF2-46D9-43CD-AC49-9ABF9B69699D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathSystem.Console", "Apps\MathSystem.Console\MathSystem.Console.csproj", "{58B01DF2-46D9-43CD-AC49-9ABF9B69699D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

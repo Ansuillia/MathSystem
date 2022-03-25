@@ -24,7 +24,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\Core\MathSystem.Business\MathSystem.Business.csproj" />
-    <ProjectReference Include="..\..\Core\MathSystem.Core\MathSystem.Business.csproj" />
     <ProjectReference Include="..\..\Core\MathSystem.Domain\MathSystem.Domain.csproj" />
     <ProjectReference Include="..\..\Infra\MathSystem.Repository\MathSystem.Repository.csproj" />
     <ProjectReference Include="..\..\Services\MathSystem.Worker\MathSystem.Worker.csproj" />
