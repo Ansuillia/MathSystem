@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-MathSystem.Worker-C3D46C15-72AF-4A0A-9DDE-D67A8A6080E3</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\MathSystem.Business\MathSystem.Business.csproj" />
+    <ProjectReference Include="..\..\Core\MathSystem.Domain\MathSystem.Domain.csproj" />
+    <ProjectReference Include="..\..\Infra\MathSystem.Repository\MathSystem.Repository.csproj" />
+    <ProjectReference Include="..\..\MathSystem.Repository\MathSystem.Repository.csproj" />
+  </ItemGroup>
+</Project>
