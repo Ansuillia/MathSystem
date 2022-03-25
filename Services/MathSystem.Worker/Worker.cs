@@ -29,6 +29,7 @@ namespace MathSystem.Worker
       _logger.LogInformation($"{nameof(Worker)} is working.");
       while (!cancellationToken.IsCancellationRequested)
       {
+        // Executa a operação
         _divisionRepository.MakeDivision();
       }
       return Task.CompletedTask;
