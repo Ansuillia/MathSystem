@@ -2,13 +2,12 @@
   "profiles": {
     "MathSystem.Worker": {
       "commandName": "Project",
+      "launchBrowser": false,
+      "launchUrl": "healthcheck",
+      "applicationUrl": "http://localhost:5002",
       "environmentVariables": {
-        "DOTNET_ENVIRONMENT": "Development"
-      },
-      "dotnetRunMessages": true
-    },
-    "Docker": {
-      "commandName": "Docker"
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
 }

@@ -1,27 +1,45 @@
-using MathSystem.Operations.Interfaces;
+using MathSystem.Repository;
 
 namespace MathSystem.Worker
 {
   public class Worker : BackgroundService
   {
     private readonly ILogger<Worker> _logger;
-    private readonly IDivisionOperation _division;
-    public Worker(ILogger<Worker> logger, IDivisionOperation division)
+    private readonly IServiceProvider _serviceProvider;
+    private readonly IDivisionRepository _divisionRepository;
+    public Worker(ILogger<Worker> logger, IServiceProvider serviceProvider, IDivisionRepository divisionRepository)
     {
       _logger = logger;
-      _division = division;
+      _serviceProvider = serviceProvider;
+      _divisionRepository = divisionRepository;
     }
 
-    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    protected override async Task ExecuteAsync(CancellationToken cancellationToken)
     {
-      while (!stoppingToken.IsCancellationRequested)
+      while (!cancellationToken.IsCancellationRequested)
       {
-        _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
+        _logger.LogInformation($"{nameof(Worker)} is running.");
 
-        Console.WriteLine(string.Join(",",_division.GetDividers(1000)));
-
-        await Task.Delay(1000, stoppingToken);
+        await DoWorkAsync(cancellationToken);
       }
+    }
+
+    private Task DoWorkAsync(CancellationToken cancellationToken)
+    {
+      _logger.LogInformation($"{nameof(Worker)} is working.");
+      while (!cancellationToken.IsCancellationRequested)
+      {
+        _divisionRepository.MakeDivision();
+      }
+      return Task.CompletedTask;
+    }
+
+    public override async Task StopAsync(CancellationToken cancellationToken)
+    {
+      _logger.LogInformation(
+          $"{nameof(Worker)} is stopping.");
+
+      await base.StopAsync(cancellationToken);
     }
   }
 }

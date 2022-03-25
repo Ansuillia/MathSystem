@@ -1,4 +1,4 @@
-﻿namespace MathSystem.Validations.Interfaces
+﻿namespace MathSystem.Business.Validations.Interfaces
 {
   /// <summary>
   /// Interface that represent a number validation.

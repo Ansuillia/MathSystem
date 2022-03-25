@@ -1,7 +1,6 @@
-using Xunit;
-using MathSystem.Operations.Implements;
 using FluentAssertions;
-using Moq;
+using MathSystem.Business.Operations;
+using Xunit;
 
 namespace MathSystem.UnitTests
 {
@@ -10,11 +9,11 @@ namespace MathSystem.UnitTests
     [Fact]
     public void DividerOperation_NumberThatHaveFourDivider_ShouldReturnFour()
     {
-      var divider = new DivisionOperation();
+      var divider = new DivisionOperationBLL();
 
       var result = divider.GetDividers(15);
 
-      result.Should().HaveCount(4);
+      result.Divisors.Should().HaveCount(4);
     }
   }
 }

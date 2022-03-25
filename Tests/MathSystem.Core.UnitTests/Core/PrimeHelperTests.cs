@@ -1,5 +1,5 @@
 ﻿using FluentAssertions;
-using MathSystem.Operations.Helpers.Implements;
+using MathSystem.Business.Helpers;
 using System.Linq;
 using Xunit;
 
@@ -14,9 +14,7 @@ namespace MathSystem.UnitTests
     [InlineData(7)]
     public void IsPrime_NumberIsPrime_ShouldHaveReturnTrue(int number)
     {
-      var primeOperation = new PrimeHelper();
-
-      var result = primeOperation.IsPrimeNumber(number);
+      var result = PrimeHelper.IsPrimeNumber(number);
 
       result.Should().BeTrue();
     }
@@ -25,8 +23,7 @@ namespace MathSystem.UnitTests
     public void GetPrimeNumbers_ListWithFivePrimeNumbers_ShouldReturnCorrectCount()
     {
       var list = Enumerable.Range(0, 12);
-      var primeOperation = new PrimeHelper();
-      var result = primeOperation.GetPrimeNumbers(list);
+      var result = PrimeHelper.GetPrimeNumbers(list);
 
       result.Count().Should().Be(5);
     }
@@ -35,8 +32,7 @@ namespace MathSystem.UnitTests
     public void GetPrimeNumbers_ListWithMillionPrimeNumbers_ShouldExecuteCorrect()
     {
       var list = Enumerable.Range(0, 1000000);
-      var primeOperation = new PrimeHelper();
-      var result = primeOperation.GetPrimeNumbers(list);
+      var result = PrimeHelper.GetPrimeNumbers(list);
 
       result.Count().Should().Be(78498);
     }
